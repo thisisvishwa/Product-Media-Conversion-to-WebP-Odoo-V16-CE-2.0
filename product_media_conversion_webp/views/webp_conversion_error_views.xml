@@ -1,0 +1,54 @@
+<odoo>
+    <data>
+
+        <!-- WebP Conversion Error Log Tree View -->
+        <record id="view_webp_conversion_error_list" model="ir.ui.view">
+            <field name="name">webp.conversion.error.tree</field>
+            <field name="model">webp.conversion.error</field>
+            <field name="arch" type="xml">
+                <tree string="WebP Conversion Errors">
+                    <field name="create_date" string="Date"/>
+                    <field name="error_type" string="Error Type"/>
+                    <field name="error_message" string="Error Message"/>
+                    <field name="product_template_id" string="Product Template"/>
+                    <field name="image_path" string="Image Path"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- WebP Conversion Error Log Form View -->
+        <record id="view_webp_conversion_error_form" model="ir.ui.view">
+            <field name="name">webp.conversion.error.form</field>
+            <field name="model">webp.conversion.error</field>
+            <field name="arch" type="xml">
+                <form string="WebP Conversion Error">
+                    <sheet>
+                        <group>
+                            <field name="create_date" string="Date"/>
+                            <field name="error_type" string="Error Type"/>
+                            <field name="error_message" string="Error Message"/>
+                            <field name="product_template_id" string="Product Template"/>
+                            <field name="image_path" string="Image Path"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- WebP Conversion Error Log Action -->
+        <record id="action_webp_conversion_error" model="ir.actions.act_window">
+            <field name="name">WebP Conversion Errors</field>
+            <field name="res_model">webp.conversion.error</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_webp_conversion_error_list"/>
+        </record>
+
+        <!-- WebP Conversion Error Log Menu Item -->
+        <menuitem id="menu_webp_conversion_error"
+                  name="WebP Conversion Errors"
+                  action="action_webp_conversion_error"
+                  parent="product.menu_catalog"
+                  sequence="5"/>
+
+    </data>
+</odoo>

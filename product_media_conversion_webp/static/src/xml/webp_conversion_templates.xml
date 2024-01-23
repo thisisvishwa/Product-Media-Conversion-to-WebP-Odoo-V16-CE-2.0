@@ -1,0 +1,59 @@
+<templates>
+    <t t-name="WebPConversionSettingsTemplate">
+        <div class="webp-conversion-settings">
+            <h3>WebP Conversion Settings</h3>
+            <form id="webp_settings_form">
+                <div class="form-group">
+                    <label for="webp_enable_conversion">Enable Conversion:</label>
+                    <input type="checkbox" id="webp_enable_conversion" name="webp_enable_conversion"/>
+                </div>
+                <div class="form-group">
+                    <label for="webp_optimization_level">Optimization Level:</label>
+                    <select id="webp_optimization_level" name="webp_optimization_level">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="webp_quality">Quality (1-100):</label>
+                    <input type="number" id="webp_quality" name="webp_quality" min="1" max="100"/>
+                </div>
+                <div class="form-group">
+                    <label for="webp_supported_formats">Supported Formats:</label>
+                    <input type="text" id="webp_supported_formats" name="webp_supported_formats" placeholder="e.g., png,jpg"/>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Save Settings</button>
+                </div>
+            </form>
+        </div>
+    </t>
+
+    <t t-name="WebPErrorLogTemplate">
+        <div class="webp-error-log">
+            <h3>WebP Conversion Error Logs</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Error Type</th>
+                        <th>Timestamp</th>
+                        <th>Affected Image</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr t-foreach="errors" t-as="error">
+                        <td t-esc="error.type"/>
+                        <td t-esc="error.timestamp"/>
+                        <td t-esc="error.image"/>
+                        <td t-esc="error.details"/>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="form-group">
+                <button type="button" class="btn btn-secondary" id="export_error_logs">Export Logs</button>
+            </div>
+        </div>
+    </t>
+</templates>

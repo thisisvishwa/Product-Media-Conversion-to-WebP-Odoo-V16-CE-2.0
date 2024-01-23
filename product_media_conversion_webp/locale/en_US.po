@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Media Conversion to WebP 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-01 12:00+0000\n"
+"PO-Revision-Date: 2023-04-01 12:00+0000\n"
+"Last-Translator: Vishwa G\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Product Template"
+msgstr "Product Template"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Convert to WebP"
+msgstr "Convert to WebP"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Conversion Settings"
+msgstr "Conversion Settings"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Error Logs"
+msgstr "Error Logs"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Optimization Level"
+msgstr "Optimization Level"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Image Quality"
+msgstr "Image Quality"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Enable Conversion"
+msgstr "Enable Conversion"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Supported Image Formats"
+msgstr "Supported Image Formats"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Original Image Format"
+msgstr "Original Image Format"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Advanced Optimization Techniques"
+msgstr "Advanced Optimization Techniques"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Error Type"
+msgstr "Error Type"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Timestamp"
+msgstr "Timestamp"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Affected Images"
+msgstr "Affected Images"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Export Error Logs"
+msgstr "Export Error Logs"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Installation Guide"
+msgstr "Installation Guide"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "User Guide"
+msgstr "User Guide"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Administrator Guide"
+msgstr "Administrator Guide"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product.template
+msgid "Troubleshooting Guide"
+msgstr "Troubleshooting Guide"
