@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+
+        <!-- Inherit the product template form view to add WebP conversion settings -->
+        <record id="view_product_template_form_webp" model="ir.ui.view">
+            <field name="name">product.template.form.webp</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_image_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='image_optimization']" position="inside">
+                    <group>
+                        <field name="webp_enabled"/>
+                        <field name="webp_quality"/>
+                        <field name="webp_optimization_level"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Add a view for the WebP conversion error logs -->
+        <record id="view_webp_conversion_error_list" model="ir.ui.view">
+            <field name="name">webp.conversion.error.list</field>
+            <field name="model">webp.conversion.error</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="create_date"/>
+                    <field name="error_type"/>
+                    <field name="image_id"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action to open the WebP conversion error logs -->
+        <record id="action_webp_conversion_error" model="ir.actions.act_window">
+            <field name="name">WebP Conversion Errors</field>
+            <field name="res_model">webp.conversion.error</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_webp_conversion_error_list"/>
+        </record>
+
+        <!-- Menu item for WebP conversion error logs -->
+        <menuitem id="menu_webp_conversion_error"
+                  name="WebP Conversion Errors"
+                  action="action_webp_conversion_error"
+                  parent="product.menu_catalog"
+                  sequence="5"/>
+
+    </data>
+</odoo>

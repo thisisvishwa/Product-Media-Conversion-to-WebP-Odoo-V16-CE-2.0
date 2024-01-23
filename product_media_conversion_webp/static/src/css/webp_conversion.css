@@ -1,0 +1,94 @@
+/* WebP Conversion Module Styles */
+
+.webp-conversion-settings {
+  padding: 15px;
+  background-color: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.webp-conversion-settings h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.webp-conversion-settings .settings-form {
+  margin-top: 20px;
+}
+
+.webp-conversion-settings .settings-form .form-group {
+  margin-bottom: 15px;
+}
+
+.webp-conversion-settings .settings-form .form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.webp-conversion-settings .settings-form .form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+.webp-conversion-settings .settings-form .help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+
+.webp-error-log {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.webp-error-log .error-log-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.webp-error-log .error-log-list .error-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.webp-error-log .error-log-list .error-item:last-child {
+  border-bottom: none;
+}
+
+.webp-error-log .error-log-list .error-item .error-message {
+  color: #a94442;
+  font-weight: bold;
+}
+
+.webp-error-log .error-log-list .error-item .error-time {
+  color: #333;
+  font-size: 0.9em;
+}
+
+.webp-error-log .error-log-list .error-item .error-image {
+  color: #333;
+  font-size: 0.9em;
+  word-break: break-all;
+}
